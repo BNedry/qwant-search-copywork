@@ -1,6 +1,6 @@
 import * as request from "request-promise-native";
 
-const BASE_URL = "https://api.qwant.com/org/search/";
+const BASE_URL = `http://${window.location.hostname}:4000/org/search/`;
 const WEB_URL = `${BASE_URL}web`;
 
 export default class Qwant {

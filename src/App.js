@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import SearchResult from "./components/SearchResult";
 
 import './App.css';
+import Qwant from './api/Qwant';
 
 const searchResult = [
   {
@@ -107,6 +108,10 @@ const searchResult = [
     "position": 10
   }
 ];
+
+Qwant.web("qwant").then((data) => {
+  console.log(data);
+})
 
 function App() {
   return (
