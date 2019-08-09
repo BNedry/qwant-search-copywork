@@ -108,13 +108,6 @@ const searchResult = [
   }
 ];
 
-const searchResultData = {
-  title: "<b>Qwant</b> - Le moteur de recherche qui respecte votre vie privée",
-  url: "https://www.qwant.com/?l=fr",
-  source: "https://www.<b>qwant</b>.com/?l=fr",
-  desc: "<b>Qwant</b> est un moteur de recherche qui respecte votre vie privée tout en facilitant la découverte et le partage grâce à une approche sociale."
-}
-
 function App() {
   return (
     <div className="App">

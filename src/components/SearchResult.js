@@ -13,7 +13,7 @@ export default class SearchResult extends React.Component {
     render() {
         return (
             <div className="result">
-                <h3><a href={this.props.url} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.props.title)}}></a></h3>
+                <h3 className="result-title"><a href={this.props.url} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.props.title)}}></a></h3>
                 <span className="result-source" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.props.source)}}></span>
                 <p className="result-desc" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.props.desc)}}></p>
             </div>
