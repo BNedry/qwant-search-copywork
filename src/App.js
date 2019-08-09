@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import SearchResult from "./components/SearchResult";
 
 import './App.css';
-import Qwant from './api/Qwant';
+import SearchResultList from './components/SearchResultList';
 
 const searchResult = [
   {
@@ -109,18 +109,12 @@ const searchResult = [
   }
 ];
 
-Qwant.web("qwant").then((data) => {
-  console.log(data);
-})
-
 function App() {
   return (
     <div className="App">
       <Header />
       <div id="content">
-        <div id="results">
-          {searchResult.map((data) => <SearchResult className="result" {...data} key={data._id} />)}
-        </div>
+        <SearchResultList query="qwant"/>
       </div>
     </div>
   );
