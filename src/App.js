@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Header from "./component/Header";
-import SearchResult from "./component/SearchResult";
+import Header from "./components/Header";
+import SearchResult from "./components/SearchResult";
 
 import './App.css';
 
