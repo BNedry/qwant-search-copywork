@@ -1,12 +1,24 @@
 import React from 'react';
-import TopBar from "./component/TopBar";
+
+import Header from "./component/Header";
+import SearchResult from "./component/SearchResult";
 
 import './App.css';
+
+const searchResultData = {
+  title: "<b>Qwant</b> - Le moteur de recherche qui respecte votre vie privée",
+  url: "https://www.qwant.com/?l=fr",
+  source: "https://www.<b>qwant</b>.com/?l=fr",
+  desc: "<b>Qwant</b> est un moteur de recherche qui respecte votre vie privée tout en facilitant la découverte et le partage grâce à une approche sociale."
+}
 
 function App() {
   return (
     <div className="App">
-      <TopBar />
+      <Header />
+      <div id="content">
+        <SearchResult {...searchResultData}/>
+      </div>
     </div>
   );
 }

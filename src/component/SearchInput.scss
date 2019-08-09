@@ -4,15 +4,19 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
-    margin: 10px;
+    margin: 18px;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
     width: 35%;
     color: #353c52;
+    background-color: white;
+
+    &:hover {
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+    }
 
     input {
         border: 0;
         color: #353c52;
-        font-family: "Asap", sans-serif;
         font-size: 22px;
         font-weight: 400;
         width: calc(100% - 132px);
@@ -27,9 +31,15 @@
     #search-erase {
         font-size: 16px;
         margin: 0 8px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     
     #search-button {
+        &:hover {
+            cursor: pointer;
+        }
         font-size: 24px;
         margin: 0 8px;
         transform:rotateY(180deg);
