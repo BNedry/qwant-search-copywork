@@ -1,0 +1,35 @@
+$black: #353c52;
+$grey: #e0e1e6;
+$darkgrey: #5c6f84;
+
+#results {
+    width: 80%;
+    max-width: 630px;
+}
+
+#results-header {
+    letter-spacing: 0;
+    border-bottom: 1px $grey solid;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#results-title {
+    color: $black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#results-freshness {
+    color: #5c6f84;
+    font-size: 13px;
+
+    .la {
+        margin: 0 12px;
+    }
+}
+
+#results-title, #results-freshness {
+    display: inline-flex;
+}

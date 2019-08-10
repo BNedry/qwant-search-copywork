@@ -3,6 +3,5 @@
   margin: 0;
   font-family: "Asap", sans-serif; }
 
-#results {
-  width: 80%;
-  max-width: 630px; }
+.uppercase {
+  text-transform: uppercase; }
