@@ -1,0 +1,24 @@
+.sidebar-active_bar {
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 44px;
+  background-color: #353c52;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px; }
+
+.sidebar-item {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5c6f84;
+  font-weight: bold;
+  padding: 14px 20px; }
+  .sidebar-item.active {
+    color: #353c52; }
+  .sidebar-item .la {
+    font-size: 28px; }
+  .sidebar-item span {
+    font-size: 12px;
+    margin-top: 4px; }

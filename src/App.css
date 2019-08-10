@@ -5,3 +5,6 @@
 
 .uppercase {
   text-transform: uppercase; }
+
+#wrapper {
+  display: flex; }

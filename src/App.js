@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from "./components/Header/Header";
 import SearchResultList from './components/SearchResultList/SearchResultList';
+import Sidebar from './components/Sidebar/Sidebar';
 
 import search from "./store/Search";
 
@@ -11,7 +12,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div id="content">
+      <div id="wrapper">
+        <Sidebar />
         <SearchResultList search={search}/>
       </div>
     </div>

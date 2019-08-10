@@ -1,0 +1,38 @@
+$grey: #5c6f84;
+$black: #353c52;
+$margin-top: 4px;
+$icon-size: 28px; 
+$label-size: 12px;
+
+.sidebar-active_bar {
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: $label-size + $margin-top + $icon-size;
+    background-color: $black;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px; 
+}
+
+.sidebar-item {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    color: $grey;
+    font-weight: bold;
+    padding: 14px 20px;
+
+    &.active {
+        color: $black;
+    }
+
+    .la {
+        font-size: $icon-size;
+    }
+
+    span {
+        font-size: $label-size;
+        margin-top: $margin-top;
+    }
+}
