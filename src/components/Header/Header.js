@@ -3,7 +3,7 @@ import React from "react";
 import SearchInput from "../SearchInput/SearchInput";
 
 import "./Header.css";
-import background from "../img/header-bg.svg";
+import background from "./header-bg.svg";
 
 const style = {
     backgroundImage: `url(${background})`,

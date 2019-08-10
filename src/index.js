@@ -7,7 +7,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-configure({enforceActions: true});
+configure({enforceActions: "always"});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

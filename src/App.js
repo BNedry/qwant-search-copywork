@@ -1,16 +1,18 @@
 import React from 'react';
 
 import Header from "./components/Header/Header";
+import SearchResultList from './components/SearchResultList/SearchResultList';
+
+import search from "./store/Search";
 
 import './App.css';
-import SearchResultList from './components/SearchResultList/SearchResultList';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <div id="content">
-        <SearchResultList query="qwant"/>
+        <SearchResultList search={search}/>
       </div>
     </div>
   );
