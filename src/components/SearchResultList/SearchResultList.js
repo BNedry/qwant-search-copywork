@@ -1,10 +1,10 @@
 import React from "react";
 
-import SearchResult from "./SearchResult";
+import SearchResult from "../SearchResult/SearchResult";
 
 import "./SearchResultList.css";
 
-import Qwant from "../api/Qwant";
+import Qwant from "../../api/Qwant";
 
 export default class SearchResultList extends React.Component {
     constructor(props) {

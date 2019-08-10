@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 import './App.css';
-import SearchResultList from './components/SearchResultList';
+import SearchResultList from './components/SearchResultList/SearchResultList';
 
 function App() {
   return (
