@@ -1,0 +1,19 @@
+@import "../../../../colors";
+
+button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+span.text {
+    text-transform: uppercase;
+    font-size: 11px;
+    padding-left: 8px;
+    color: $darkgrey;
+}
+
+span.flag-icon {
+    font-size: 15px;
+}

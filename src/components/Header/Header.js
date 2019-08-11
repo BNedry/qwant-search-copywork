@@ -1,6 +1,7 @@
 import React from "react";
 
 import SearchInput from "../SearchInput/SearchInput";
+import RightButtons from "./RightButtons/RightButtons";
 
 import "./Header.css";
 import background from "./header-bg.svg";
@@ -15,6 +16,7 @@ export default class Header extends React.Component {
         return (
             <header style={style}>
                 <SearchInput />
+                <RightButtons />
             </header>
         );
     }

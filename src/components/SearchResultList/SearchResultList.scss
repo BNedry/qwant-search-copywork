@@ -1,7 +1,6 @@
 @import "../../colors";
 
 $grey: #e0e1e6;
-$darkgrey: #5c6f84;
 
 #results {
     width: 80%;
@@ -23,7 +22,7 @@ $darkgrey: #5c6f84;
 }
 
 #results-freshness {
-    color: #5c6f84;
+    color: $darkgrey;
     font-size: 13px;
 
     .la {
