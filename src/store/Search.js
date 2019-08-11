@@ -3,11 +3,15 @@ import Qwant from "../api/Qwant";
 
 class Search {
     results = [];
+    isLoading = false;
 
     web(query) {
         Qwant.web(query).then(action("searchWebSuccess", (res) => {
             this.results = res.data.result.items;
+        })).finally(action("searchWebFinally", () => {
+            this.isLoading = false;
         }));
+        this.isLoading = true;
     };
 
     emptyResults() {
@@ -17,6 +21,7 @@ class Search {
 
 decorate(Search, {
     results: observable,
+    isLoading: observable,
     web: action,
     emptyResults: action
 })
