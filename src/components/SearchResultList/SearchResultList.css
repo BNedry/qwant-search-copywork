@@ -22,3 +22,8 @@
 
 #results-title, #results-freshness {
   display: inline-flex; }
+
+#results-loading {
+  padding: 24px;
+  display: flex;
+  justify-content: center; }
